@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Леся Пшеничникова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2615913).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Шнайдер] (https://htmlacademy.ru/profile/id1178327).
 
 ---
 
