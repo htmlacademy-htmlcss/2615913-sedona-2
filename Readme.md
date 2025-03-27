@@ -2,7 +2,7 @@
 
 * Студент: [Леся Пшеничникова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2615913).
 * Наставник: [Полина Шнайдер] (https://htmlacademy.ru/profile/id1178327).
-
+* Сайт: [Мой первый сайт](https://olesyapshenichnikova.github.io/2615913-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
