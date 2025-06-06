@@ -12,12 +12,52 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html{
+    height: 100%;
+}
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family:"PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: black;
+}
+.site-container {
+    width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.header-main{
+    width: 1200px;
+}
+.navigation{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+.header-list{
+    width: 430px;
+    margin: 0;
+    padding: 0;
+}
+.navigation-item{
+    width: 308px;
+    margin-left: auto;
+}
+.main-index{
+    width: 1200px;
+    flex-grow: 1;
+}
+.page-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.welcome-logo{
+    display: block;
+    margin: 0 auto;
 }
 .navigation-link{
     color: black;
@@ -30,6 +70,9 @@ body{
     background-size: 100%;
     color: black;
     background-repeat: no-repeat;
+}
+.welcome-main{
+    text-align: center;
 }
 .main-item{
     font-size: 30px;
@@ -45,6 +88,16 @@ body{
 .item-content{
     font-size: 24px;
     line-height: 28px;
+}
+.advantages-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.advantages-item{
+    width: 230px;
 }
 .search{
     font-size: 20px;
