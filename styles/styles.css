@@ -82,8 +82,30 @@ body{
     font-size: 22px;
     line-height: 26px;
 }
+.container-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.container-item{
+    width: 1200px;
+}
+.item{
+    width: 400px;
+    text-align: center;
+}
+.prizent{
+    width: 800px;
+}
 .background{
     width: 1200px;
+}
+.main-booking{
+    width: 592px;
+}
+.main-booking-item{
+    text-align: center;
 }
 .item-content{
     font-size: 24px;
@@ -102,14 +124,18 @@ body{
 .search{
     font-size: 20px;
     line-height: 36px;
+    width: 376px;
     color: #FFFFFF;
     background-color: #756157;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 .email{
     font-size: 18px;
     line-height: 24px;
 }
-
 .contacts{
     font-size: 40px;
     line-height: 40px;
@@ -168,6 +194,22 @@ body{
     font-weight: 700;
     color: #FFFFFF;
     background-color: #756157;
+}
+.footer-main{
+    width: 1060px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.footer-list{
+    display: flex;
+    width: 150px;
+}
+.footer-contacts{
+    width: 332px;
+}
+.footer-logo{
+    width: 115px;
 }
 .button{
     font-weight: 700;
