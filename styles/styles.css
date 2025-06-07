@@ -132,9 +132,29 @@ body{
     justify-content: center;
     align-items: center;
 }
+.search-email{
+    width: 684px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
 .email{
+    width: 452px;
+    height: 52px;
     font-size: 18px;
     line-height: 24px;
+}
+.button{
+    width: 232px;
+    height: 52px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    font-size: 20px;
+    line-height: 36px;
+    border-bottom-right-radius:4px ;
+    border-top-right-radius: 4px;
 }
 .contacts{
     font-size: 40px;
@@ -211,13 +231,7 @@ body{
 .footer-logo{
     width: 115px;
 }
-.button{
-    font-weight: 700;
-    color: #FFFFFF;
-    background-color: #82B3D3;
-    font-size: 20px;
-    line-height: 36px;
-}
+
 .product-card-rating{
     font-size: 16px;
     line-height: 20px;
