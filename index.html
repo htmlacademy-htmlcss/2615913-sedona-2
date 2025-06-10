@@ -7,7 +7,6 @@
         <title>Document</title>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
-
     <body>
         <div class="site-container">
         <header class="header-main">
@@ -25,7 +24,7 @@
                         <a class="navigation-link" href="catalog.html">Гостиницы</a>
                     </li>
                 </ul>
-                <ul class="navigation-list navigation-user">
+                <ul class="navigation-user">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span>
                             <img class="logo-nav" src="pictures/search.jpg" alt="Поиск"></a>
@@ -41,7 +40,6 @@
             </nav>
         </header>
         <main class="main-index">
-            <div class="page-container">
             <section class="welcome">
                 <h1 class="visually-hidden">Седона</h1>
                 <img class="welcome-logo" src="pictures/welcome.svg" alt="Welcome">
@@ -55,34 +53,28 @@
             <section class="container">
                 <ul class="container-list">
                     <li class="container-item">
-                        <div class="item">
+                        <div class="container-item-big">
                             <h3 class="item-content">Настоящий городок</h3>
                             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         </div>
-                        <img class="prizent" src="pictures/view-photo.jpg" alt="Фото отеля">
+                        <img class="prizent container-item-big" src="pictures/view-photo.jpg" alt="Фото отеля">
                     </li>
-                    <li class="container-item">
-                        <div class="item">
+                    <li class="container-item  container-item-small">
                             <h3 class="item-content">Небольшая площадка</h3>
                             <p>Все достопримечательности находятся очень близко</p>
-                        </div>
                     </li>
-                    <li class="container-item">
-                        <div class="item">
+                        <li class="container-item  container-item-small">
                             <h3 class="item-content">Красивая дорога</h3>
                             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                        </div>
                     </li>
-                        <li class="container-item">
-                        <div class="item">
+                    <li class="container-item container-item-small">
                             <h3 class="item-content">Мало туристов</h3>
                             <p>Большинство едет в Гранд Каньон и толпится там</p>
-                        </div>
                     </li>
                     <li class="container-item">
-                        <img class="prizent" src="pictures/photo-of-the-area.jpg" alt="Фото местности">
-                        <div class="item">
-                            <h3 class="item-content">Там естьмост дьявола</h3>
+                        <img class="prizent container-item-big" src="pictures/photo-of-the-area.jpg" alt="Фото местности">
+                        <div class="container-item-small">
+                            <h3 class="item-content">Там есть мост дьявола</h3>
                             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                         </div>
                     </li>
@@ -127,8 +119,8 @@
             </section>
             <section class="background">
                 <div class="main-booking-item">
-                    <h2 class="main-item background">Подпишитесь на рассылку</h2>
-                    <p class="main-item-slogan background">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                    <h2 class="main-item">Подпишитесь на рассылку</h2>
+                    <p class="main-item-slogan">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 </div>
                 <form class="search-email" action="#" method="post">
                     <label for="email">
@@ -137,7 +129,6 @@
                     <button class="button">Подписаться</button>
                 </form>
             </section>
-            </div>
         </main>
         <footer class="footer-main">
             <section class="footer-nav">
