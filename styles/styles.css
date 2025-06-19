@@ -326,10 +326,17 @@ a{
     justify-content: space-between;
     padding-bottom: 32px;
 }
+.container-product{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
 .catalog{
     display: flex;
-    justify-content: flex-start;
-    align-items:center
+    justify-content:space-between;
+    align-items:center;
+    padding: 50px 70px 40px 50px;
 }
 .catalog-sorting{
     padding: 56.5px 200px 46.5px 70px;
@@ -420,6 +427,10 @@ a{
     background-color: #F2F2F2;
     font-size: 16px;
     line-height: 20px;
+}
+.pagination-conteiner{
+    display: flex;
+    justify-content: flex-start;
 }
 .pagination{
     display: flex;
