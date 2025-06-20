@@ -73,6 +73,15 @@ body{
     background-size: 100%;
     color: black;
     background-repeat: no-repeat;
+    position: relative;
+}
+.welcome-logo{
+    padding: 51px 351px 82px 371px;
+}
+.welcome-logo-style{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .welcome-main{
     text-align: center;
@@ -85,8 +94,19 @@ body{
     font-size: 22px;
     line-height: 26px;
 }
+.container-item-small{
+    grid-area: block-text;
+}
+.container-item-big{
+    grid-area: block-picture;
+}
 .container-list{
-    display: flex;
+   /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    */display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
@@ -99,7 +119,10 @@ body{
 	justify-content: center;
     text-align: center;
     min-height: 385px;
-}
+}/*
+.container-item-img{
+   grid-column: span 2;
+}*/
 .container-item-small{
     width: 33%;
     flex-direction: column;
@@ -184,13 +207,14 @@ body{
 .main-inner{
     background-image: url("../pictures/catalog-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-color: #000000;
 }
 .main-title{
     font-size: 60px;
     line-height: 78px;
     color: #FFFFFF;
+    margin: 0 auto;
 }
 .main-tab{
     font-size: 16px;
@@ -296,10 +320,11 @@ a{
     padding: 35px 635px 4px 70px;
 }
 .main-section{
-     display: flex;
-     justify-content:space-between;
-     align-items:center;
-     padding-bottom: 70px;
+     display: grid;
+     grid-template-columns: 150px 150px 228px 191px;
+             gap: 70px;
+         padding-bottom: 73px;
+         margin: 0;
 }
 .button-settings{
     width: 190px;
@@ -321,6 +346,9 @@ a{
 .main-block-item{
     list-style-type: circle;
 }
+.price-block{
+    padding-left: 70px;
+}
 .price-block-img{
     display: flex;
     justify-content: space-between;
@@ -336,10 +364,10 @@ a{
     display: flex;
     justify-content:space-between;
     align-items:center;
-    padding: 50px 70px 40px 50px;
+    max-width: 1060px;
+    margin: 0 auto;
 }
 .catalog-sorting{
-    padding: 56.5px 200px 46.5px 70px;
     font-size: 30px;
     line-height: 36px;
 }
@@ -363,7 +391,8 @@ a{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 340px);
-    padding: 40px 70px;
+    min-width: 1060px;
+    margin: 0;
 }
 .product-card{
     box-sizing: border-box;
@@ -443,3 +472,4 @@ a{
     padding-top: 96px;
     padding-bottom: 104px;
 }
+
