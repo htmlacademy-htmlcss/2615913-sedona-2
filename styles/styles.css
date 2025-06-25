@@ -1,0 +1,543 @@
+@font-face {
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    font-family:"PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    margin: 0;
+}
+.site-container {
+    width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 64px;
+}
+.header-list{
+    width: 430px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navigation-user{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.header-item-img{
+    padding-left: 70px;
+    padding-right: 28px;
+    height: 70px;
+    z-index: 1;
+}
+.home-pin-text{
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.pin{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navigation-user {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	gap: 20px;
+}
+.main-inner-block-nav{
+    display: flex;
+    padding-left: 70px;
+    width: 114px;
+    height: 21px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+.navigation-item{
+    margin-left: auto;
+}
+.welcome-logo{
+    display: block;
+    margin: 0 auto;
+}
+.navigation-link{
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+}
+.navigation-item-button{
+    font-size: 20px;
+    line-height: 24px;
+    background-color:#756157;
+    color: #FFFFFF;
+    padding: 8px 34px;
+    border-radius: 4px;
+    border: none;
+}
+.welcome{
+    background-image: url("../pictures/index-background.jpg");
+    background-color: #000000;
+    background-size: 100%;
+    color: black;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.welcome-logo{
+    padding: 51px 351px 82px 371px;
+}
+.welcome-logo-style{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.welcome-main{
+    text-align: center;
+}
+.main-item{
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 69px;
+}
+.main-item-slogan{
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 69px;
+}
+.container-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.container-item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+    max-height: 385px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 112.5px 85px;
+}
+.container-item-img{
+    grid-column: span 2;
+    overflow: hidden;
+}
+.container-item::before{
+  border-bottom: 2px ridge #FFFFFF4D;
+  width: 60px;
+  height: 2px;
+  order: 2;
+  content: "";
+}
+.color-one{
+    background-color: #82B3D3;
+    color:#FFFFFF;
+}
+.color-two{
+    background-color: #83B3D31F;
+}
+.color-three{
+    background-color: #83B3D333;
+}
+.prizent{
+    width: 800px;
+}
+.item-content{
+    font-size: 24px;
+    line-height: 28px;
+}
+.item-content-two{
+    order: 3;
+}
+.main-booking-list{
+    list-style: none;
+    display: flex;
+    padding: 96px 304px;
+    flex-direction: column;
+}
+.main-booking-item{
+    text-align: center;
+}
+
+
+.advantages-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+.advantages-item{
+    width: 400px;
+    height: 385px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.advantages-item-block{
+    width: 230px;
+    height: 223px;
+}
+.search{
+    font-size: 20px;
+    line-height: 36px;
+    width: 376px;
+    color: #FFFFFF;
+    background-color: #756157;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.search-email{
+    width: 684px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    font-size: 18px;
+    line-height: 24px;
+    border: 0;
+    padding: 14px 345px 14px 20px;
+    flex-grow: 1;
+    background-color: #F2F2F2;
+    border-bottom-left-radius:4px ;
+    border-top-left-radius: 4px;
+}
+.button{
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    font-size: 20px;
+    line-height: 36px;
+    border-bottom-right-radius:4px ;
+    border-top-right-radius: 4px;
+    padding: 8px 50px;
+}
+button:focus{
+    background-color: #7DB54F;
+}
+a:hover{
+    background-color: red;
+}
+.contacts{
+    font-size: 40px;
+    line-height: 40px;
+}
+.main-block{
+    list-style: none;
+    color: #FFFFFF;
+}
+.main-inner{
+    background-image: url("../pictures/catalog-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+}
+.main-title{
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+.main-tab{
+    font-size: 16px;
+    line-height: 21px;
+}
+.main-block-list{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.main-block-item{
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 16px;
+}
+.settings{
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #82b3d3;
+    border-radius: 4px;
+}
+.background{
+    background-image: url("../pictures/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    color: #FFFFFF;
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+.settings-two{
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+}
+.offer{
+    display: flex;
+    text-align: center;
+    padding: 64px 347.5px 110px 347.5px;
+}
+.product-card-title{
+    font-weight: 700;
+    color: #000000;
+}
+
+.button{
+    border: 0;
+}
+.footer-main{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 40px 70px 30px 70px;
+}
+.footer-list{
+    display: flex;
+	padding: 0;
+	margin: 0;
+    list-style: none;
+    padding-right: 41px;
+}
+.footer-contacts{
+    width: 332px;
+}
+.footer-logo{
+    width: 115px;
+}
+
+.pagination-link{
+    text-decoration:none;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.pagination-current{
+    text-decoration: none;
+    color: #000000;
+    background-color: #F2F2F2;
+
+}
+
+.visually-hidden{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+        border: 0;
+}
+a{
+    text-decoration: none;
+  }
+.main{
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+.main-title{
+    padding: 35px 635px 4px 70px;
+}
+.main-section{
+     display: grid;
+     grid-template-columns: 150px 150px 228px 191px;
+     gap: 70px;
+     padding-bottom: 73px;
+     margin: 0;
+     width: 1060px;
+}
+.button-settings{
+    width: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+}
+.settings{
+    border: none;
+    padding: 8px 50px;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+.settings-two{
+    background: transparent;
+    border: none;
+}
+.main-block-item{
+    list-style-type: circle;
+}
+.price-block{
+    padding-left: 70px;
+}
+.price-block-img{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.container-product{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.container-product::before{
+    border-bottom: 1px ridge #E6E6E6;
+    width: 1060px;
+    order: 2;
+    content: "";
+}
+.catalog{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 50px 70px 40px 70px;
+}
+.catalog-sorting{
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.select-control{
+    padding: 14px 70px 14px 20px;
+    border-radius: 4px;
+    border: 2px solid #E5E5E5;
+}
+.select-button{
+    padding-left: 70px;
+}
+.product-card-title{
+    font-size: 24px;
+    line-height: 28px;
+}
+.pagination-link{
+    border-radius:4px;
+    padding: 11.36px 24.55px 12.64px 23.55px;
+}
+.product{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 340px);
+    min-width: 1060px;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.product-card{
+    box-sizing: border-box;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.product-card-image{
+    width: 100%;
+
+}
+.product-card-view{
+    color: #333333;
+}
+.product-card-offer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-card-price{
+    color: #333333;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-self: center;
+}
+.product-card-button{
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 8px 26px;
+}
+.button-catalog{
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #756157;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 4px ;
+    padding: 8px 26px;
+}
+.button-modifier{
+    background-color: #7DB54F;
+}
+
+.product-card-rating-img{
+    width: 140px;
+    height: 37px;
+    display: flex;
+    align-self: center;
+}
+.product-card-rating{
+    padding: 9px 22px;
+    border-radius: 4px;
+    color: #333333;
+    background-color: #F2F2F2;
+    font-size: 16px;
+    line-height: 20px;
+}
+.pagination-conteiner{
+    display: flex;
+    justify-content: flex-start;
+}
+.pagination{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 8px;
+    padding: 60px 70px;
+}
+.background-catalog{
+    padding: 36px 258px 104px 258px;
+}
