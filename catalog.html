@@ -7,7 +7,6 @@
         <title>Document</title>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
-
     <body>
         <div class="site-container">
         <header class="header-main">
@@ -51,41 +50,59 @@
                         <h3 class="home-pin-text">Гостиницы</h3>
                     </div>
                 </section>
-                <section class="container-product">
+                <section class="container-product-block">
                     <div class="main-section">
                         <div class="main-section-block">
                         <h3 class="main-block-list">Инфраструктура:
                         </h3>
-                            <ul class="main-block">
-                        <li class="main-block-item">Бассейн
-                        </li>
-                        <li class="main-block-item">Парковка
-                        </li>
-                        <li class="main-block-item">Wi-Fi
-                        </li>
-                        </ul>
+                        <div class="main-block">
+                        <label>
+                            <input class="main-block-item" type="radio" name="question-one"  value="Бассейн" checked>Бассейн
+                        </label>
+                        <label>
+                            <input class="main-block-item" type="radio" name="question-one"  value="Парковка" checked>Парковка
+                        </label>
+                        <label>
+                            <input class="main-block-item" type="radio" name="question-one"  value="Wi-Fi">Wi-Fi
+                        </label>
+                    </div>
                     </div>
                     <div class="main-section-block">
                         <h3 class="main-block-list">Тип жилья:
                         </h3>
                         <ul class="main-block">
-                            <li class="main-block-item">Гостиница
-                            </li>
-                            <li class="main-block-item">Мотель
-                            </li>
-                            <li class="main-block-item">Апартаменты
-                            </li>
+                            <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field" checked>
+                            Гостиница</label>
+                            <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field">
+                            Мотель</label>
+                            <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field">
+                            Аппартаменты</label>
                         </ul>
                     </div>
+
                         <div class="price-block">
                             <h3 class="main-block-list">Стоимость, ₽:</h3>
-                            <div class="price-block-img">
-                                <img class="mimimum-price" src="pictures/minimum-price.png"
-                                    alt="значение минимальной цены">
-                                <img class="maximum-price" src="pictures/maximum-price.png"
-                                    alt="значение максимальной цены">
-                            </div>
-                            <img class="price-slider" src="pictures/price-slider.png" alt="бегунок цены">
+                            <div class="range">
+                                <div class="range-wrapper-inputs">
+                                  <label class="catalog-filter-label">
+                                    <input class="range-input range-input-left" type="number" value="0" name="min-price"><span class="input-text">oт</span>
+                                  </label>
+                                  <label class="catalog-filter-label">
+                                    <input class="range-input range-input-rignt" type="number" value="9000" name="max-price"><span class="input-text">до</span>
+                                  </label>
+                                </div>
+                                <div class="range-scale">
+                                    <div class="range-bar" style="left: 42px; width: 206px">
+                                      <button class="range-toggle toggle-min">
+                                        <span class="visually-hidden">Изменить минимальную цену</span>
+                                      </button>
+                                      <button class="range-toggle toggle-max">
+                                        <span class="visually-hidden">Изменить максимальную цену</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                              </div>
+
                         </div>
                         <div class="button-settings">
                             <button class="settings">Применить</button>
@@ -258,8 +275,48 @@
                 <a href="https://htmlacademy.ru/">
                     <img class="logo" src="pictures/htmlacademy-logo.svg" alt="Логотип HTML Academy">
                 </a>
+                <div class="price-block-img">
+                    <img class="mimimum-price" src="pictures/minimum-price.png"
+                        alt="значение минимальной цены">
+                    <img class="maximum-price" src="pictures/maximum-price.png"
+                        alt="значение максимальной цены">
+                        <img class="price-slider" src="pictures/price-slider.png" alt="бегунок цены">
+                </div>
             </section>
         </footer>
+        <div class="modal-container modal-container-close">
+            <div class="modal modal-auth">
+                <button class="modal-close-button">
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <section class="modal-content">
+                    <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+                  </section>
+                  <div class="modal-given">
+                    <span class="modal-text">Дата заезда:</span>
+                    <input class="input-field" type="text" placeholder="27 апреля 2020">
+                  </div>
+                  <div class="modal-given">
+                    <span class="modal-text">Дата выезда:</span>
+                    <input class="input-field" type="text" placeholder="1 сентября 2023">
+                    <p>На эти даты есть свободные номера. Пока есть.</p>
+                  </div>
+                  <section class="modal-container-given">
+                  <div class="modal-given">
+                    <span class="modal-text">Взрослые:</span>
+                    <input class="image-button" type="text" placeholder="-">
+                    <button class="image-button">2</button>
+                    <input class="image-button" type="text" placeholder="+">
+                  </div>
+                  <div class="modal-given">
+                    <span class="modal-text">Дети:</span>
+                    <input class="image-button" type="text" placeholder="-">
+                    <button class="image-button">2</button>
+                    <input class="image-button" type="text" placeholder="+">
+                  </div></section>
+                  <button class="modal-button" type="submit">НАЙТИ</button>
+            </div>
+        </div>
     </div>
     </body>
 
