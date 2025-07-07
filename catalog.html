@@ -34,7 +34,7 @@
                             <img class="logo-nav" src="pictures/favorites.png" alt="Избранное"></a>
                     </li>
                     <li class="navigation-item">
-                        <button class="navigation-item-button">Хочу сюда!</button>
+                        <button class="navigation-item-button">ХОЧУ СЮДА!</button>
                     </li>
                 </ul>
             </nav>
@@ -56,28 +56,28 @@
                         <h3 class="main-block-list">Инфраструктура:
                         </h3>
                         <div class="main-block">
-                        <label>
-                            <input class="main-block-item" type="radio" name="question-one"  value="Бассейн" checked>Бассейн
-                        </label>
-                        <label>
-                            <input class="main-block-item" type="radio" name="question-one"  value="Парковка" checked>Парковка
-                        </label>
-                        <label>
-                            <input class="main-block-item" type="radio" name="question-one"  value="Wi-Fi">Wi-Fi
-                        </label>
+                            <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field" checked>
+                                Бассейн</label>
+                                <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field">
+                                Парковки</label>
+                                <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field">
+                                Wi-Fi</label>
                     </div>
                     </div>
                     <div class="main-section-block">
                         <h3 class="main-block-list">Тип жилья:
                         </h3>
-                        <ul class="main-block">
-                            <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field" checked>
-                            Гостиница</label>
-                            <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field">
-                            Мотель</label>
-                            <label for="subscribe-field"><input class="main-block-item"  type="checkbox" name="subscribe" id="subscribe-field">
-                            Аппартаменты</label>
-                        </ul>
+                        <div class="main-block">
+                            <label>
+                                <input class="main-block-item" type="radio" name="question-one"  value="Бассейн" checked>Гостиница
+                            </label>
+                            <label>
+                                <input class="main-block-item" type="radio" name="question-one"  value="Парковка" checked>Мотель
+                            </label>
+                            <label>
+                                <input class="main-block-item" type="radio" name="question-one"  value="Wi-Fi">Апартаменты
+                            </label>
+                            </div>
                     </div>
 
                         <div class="price-block">
@@ -112,7 +112,7 @@
                 </section>
             </section>
             <section class="catalog">
-                <h3 class="catalog-sorting">Найдено гостиниц: 38</h3>
+                <h3 class="catalog-sorting">НАЙДЕНО ГОСТИНИЦ: 38</h3>
                 <select class="select-control" aria-label="Сортировка">
                     <option value="popular">Сначала дешевое</option>
                     <option value="cheap">Сначала популярное</option>
@@ -275,13 +275,6 @@
                 <a href="https://htmlacademy.ru/">
                     <img class="logo" src="pictures/htmlacademy-logo.svg" alt="Логотип HTML Academy">
                 </a>
-                <div class="price-block-img">
-                    <img class="mimimum-price" src="pictures/minimum-price.png"
-                        alt="значение минимальной цены">
-                    <img class="maximum-price" src="pictures/maximum-price.png"
-                        alt="значение максимальной цены">
-                        <img class="price-slider" src="pictures/price-slider.png" alt="бегунок цены">
-                </div>
             </section>
         </footer>
         <div class="modal-container modal-container-close">
