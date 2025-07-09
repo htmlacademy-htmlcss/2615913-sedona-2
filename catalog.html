@@ -27,8 +27,7 @@
                     </ul>
                     <ul class="navigation-user">
                         <li class="navigation-item">
-                            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span>
-                                <img class="logo-nav" src="pictures/search.jpg" alt="Поиск"></a>
+                            <a class="navigation-item-search" href="#"><span class="visually-hidden">Поиск</span></a>
                         </li>
                         <li class="navigation-item">
                             <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span>
@@ -54,17 +53,18 @@
                     </section>
                     <section class="container-product-block">
                         <div class="main-section">
+                            <div class="main-block-section">
                             <div class="main-section-block">
                                 <h3 class="main-block-list">Инфраструктура:
                                 </h3>
                                 <div class="main-block">
-                                    <label for="subscribe-field"><input class="main-block-item" type="checkbox"
+                                    <label class="checkbox-label" for="subscribe-field "><input class="main-block-item checkbox-input" type="checkbox"
                                             name="subscribe" id="subscribe-field" checked>
-                                        Бассейн</label>
-                                    <label for="subscribe-field"><input class="main-block-item" type="checkbox"
-                                            name="subscribe" id="subscribe-field">
+                                        Бассейн<span class="control-mark"></span></label>
+                                    <label class="checkbox-label" for="subscribe-field"><input class="main-block-item checkbox-input" type="checkbox"
+                                            name="subscribe" id="subscribe-field"  checked>
                                         Парковки</label>
-                                    <label for="subscribe-field"><input class="main-block-item" type="checkbox"
+                                    <label  class="checkbox-label" for="subscribe-field"><input class="main-block-item checkbox-input" type="checkbox"
                                             name="subscribe" id="subscribe-field">
                                         Wi-Fi</label>
                                 </div>
@@ -73,21 +73,22 @@
                                 <h3 class="main-block-list">Тип жилья:
                                 </h3>
                                 <div class="main-block">
-                                    <label>
-                                        <input class="main-block-item" type="radio" name="question-one" value="Бассейн"
+                                    <label class="radio-label">
+                                        <input class="main-block-item radio-input" type="radio" name="question-one" value="Бассейн"
                                             checked>Гостиница
                                     </label>
-                                    <label>
-                                        <input class="main-block-item" type="radio" name="question-one" value="Парковка"
-                                            checked>Мотель
+                                    <label class="radio-label">
+                                        <input class="main-block-item radio-input" type="radio" name="question-one" value="Парковка"
+                                           >Мотель
                                     </label>
-                                    <label>
-                                        <input class="main-block-item" type="radio" name="question-one"
-                                            value="Wi-Fi">Апартаменты
+                                    <label class="radio-label">
+                                        <input class="main-block-item radio-input" type="radio" name="question-one"
+                                            value="Апартаменты">Апартаменты
                                     </label>
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="main-block-section">
                             <div class="main-section-block price-block">
                                 <h3 class="main-block-list">Стоимость, ₽:</h3>
                                 <div class="range">
@@ -119,6 +120,7 @@
                                 <button class="settings settings-two">Сбросить</button>
                             </div>
                         </div>
+                    </div>
                     </section>
                 </section>
                 <section class="catalog">
@@ -245,7 +247,7 @@
                 </section>
 
                 <section class="background-catalog">
-                    <div class="main-booking-item">
+                    <div class="main-booking-item-catalog">
                         <h2 class="main-item-catalog">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
                         <p class="main-item-slogan-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!
                         </p>

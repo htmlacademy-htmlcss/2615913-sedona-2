@@ -70,6 +70,34 @@ body{
     line-height: 21px;
     color: #FFFFFF;
 }
+.navigation-item-search{
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    box-sizing: border-box;
+    background-color: #000000;
+
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+
+}
+.navigation-item-search:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 20px;
+    height: 3px;
+    background-color: #000000;
+
+    border-radius: 0 7.5px 7.5px 0;
+
+    transform-origin: 0 50%;
+    transform: translateX(100%) rotate(45deg);
+}
 .pin{
     padding-left: 10px;
     padding-right: 10px;
@@ -172,6 +200,24 @@ body{
     padding-bottom: 54px;
     margin: 0;
 }
+.main-booking-item-mailing{
+    padding: 96px 258px 104px 258px;
+    text-align: center;
+}
+.main-item-mailing{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+.main-slogan-mailing{
+ margin: 0;
+ font-size: 22px;
+ line-height: 26px;
+ padding-top: 20px;
+ padding-bottom: 54px;
+}
+
 .main-item-slogan{
     font-size: 22px;
     line-height: 26px;
@@ -223,9 +269,13 @@ body{
 .item-content{
     font-size: 24px;
     line-height: 28px;
+    margin: 0;
+    padding-bottom: 30px;
 }
 .item-content-two{
     order: 3;
+    margin: 0;
+    padding-top: 30px;
 }
 .main-booking-list{
     list-style: none;
@@ -233,11 +283,21 @@ body{
     padding: 96px 304px;
     flex-direction: column;
 }
-.main-booking-item{
+.main-booking-item-catalog{
     text-align: center;
 }
+.main-booking-item{
+    text-align: center;
+    padding: 96px 36px;
+}
+.main-item-slog{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 54px;
 
-
+    font-size: 22px;
+    line-height: 25px;
+}
 .advantages-list{
     margin: 0;
     padding: 0;
@@ -259,6 +319,19 @@ body{
 .advantages-item-block{
     width: 230px;
     height: 223px;
+    padding: 81px 85px;
+}
+.advantages-item-block-text{
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    font-family:"PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.advantages-item-block-text-two{
+    margin: 0;
 }
 .search{
     font-size: 20px;
@@ -271,11 +344,14 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .search-email{
     display: flex;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
 }
 .email{
     font-size: 18px;
@@ -327,7 +403,7 @@ color: #7561574D;
     width: 141px;
     display: flex;
      flex-wrap: wrap;
-     gap: 20px;
+     gap: 10px;
 }
 .main-inner{
     background-image: url("../pictures/catalog-background.jpg");
@@ -357,12 +433,16 @@ color: #7561574D;
 .main-block-item{
     font-size: 18px;
     line-height: 23px;
+    width: 20px;
+    height: 20px;
 }
+
 .button-settings{
     width: 190px;
     display: flex;
     flex-wrap: wrap;
     align-self: flex-end;
+    gap: 32px;
 }
 
 .settings{
@@ -380,7 +460,6 @@ color: #7561574D;
     background-size: 100%;
     background-color: black;
     color: #FFFFFF;
-    padding: 105px 258px;
 }
 .settings-two{
     font-size: 16px;
@@ -459,15 +538,18 @@ a{
 }
 .main-section{
      display: grid;
-     grid-template-columns: 150px 150px 288px 191px;
-     gap: 70px;
-     padding-bottom: 73px;
+     grid-template-columns: 370px 550px;
+     gap: 140px;
      margin: 0;
      width: 1060px;
 }
+.main-block-section{
+    display: flex;
+    gap: 70px;
+}
 .range-wrapper-inputs {
     display: flex;
-    padding-bottom: 36px;
+    padding-bottom: 45px;
   }
 .catalog-filter-label {
     display: flex;
@@ -475,16 +557,18 @@ a{
     padding-right: 2px;
 }
 .range-input {
-    width: 143px;
+    width: 110px;
     font: inherit;
     border: none;
     background-repeat: no-repeat;
-
+    padding: 12px 12px 12px 20px;
   }
 .input-text{
     position:absolute;
     color: #000000;
     padding-left: 106px;
+    padding-top: 12px;
+
 }
 .range-input-left{
     border-top-left-radius: 4px;
@@ -508,9 +592,7 @@ a{
     border-radius: 4px;
     width: 288px;
 }
-.price-block {
-    padding-left: 70px;
-}
+
 .range-bar {
     height: 4px;
     background-color:#FFFFFF;
@@ -541,9 +623,7 @@ a{
     top: -8px;
     right: 62px;
 }
-.price-block{
 
-}
 .price-block-img{
     display: flex;
     justify-content: space-between;
