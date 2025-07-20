@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="styles/styles.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon.ico/favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon.png">
         <link rel="icon" href="favicon.ico">
     </head>
 
@@ -14,29 +14,30 @@
         <div class="site-container">
             <header class="header-main">
                 <nav class="navigation">
-                    <img class="header-item-img" src="pictures/frame-logo.png" width="140" height="70" alt="логотип отеля">
+                    <img class="header-item-img" src="pictures/frame-logo.png" width="140" height="70" alt="Логотип отеля.">
                     <ul class="header-list">
-                        <li class="header-item">
+                        <li class="header-item ">
                             <a class="navigation-link" href="index.html">Главная</a>
                         </li>
                         <li class="header-item">
                             <a class="navigation-link" href="#">О Седоне</a>
                         </li>
-
                         <li class="header-item">
-                            <a class="navigation-link" href="#">Гостиницы</a>
+                            <a class="navigation-link navigation-active" href="#">Гостиницы</a>
                         </li>
+                       
                     </ul>
                     <ul class="navigation-user">
                         <li class="navigation-item">
-                            <a class="navigation-item-search" href="#"><span class="visually-hidden">Поиск</span></a>
+                            <a class="navigation-link-two" href="#"><span class="visually-hidden">Поиск</span>
+                            <img class="logo-nav" src="pictures/search.svg" width="44" height="64" alt="поиск."></a>
                         </li>
                         <li class="navigation-item">
-                            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span>
-                                <img class="logo-nav" src="pictures/favorites.png"  width="44" height="64" alt="Избранное"></a>
+                            <a class="navigation-link-two" href="#"><span class="visually-hidden">Избранное</span>
+                                <img class="logo-nav" src="pictures/favorites.svg"  width="44" height="64" alt="Избранное."></a>
                         </li>
                         <li class="navigation-item">
-                            <button class="navigation-item-button">ХОЧУ СЮДА!</button>
+                            <button class="navigation-item-button" type="button">ХОЧУ СЮДА!</button>
                         </li>
                     </ul>
                 </nav>
@@ -50,8 +51,8 @@
                             <a class="home-pin" href="index.html">
                                 <img class="home-pin" width="13" height="15" src="pictures/home-pin.svg"
                                     alt="домик ссылка на главную страницу"></a>
-                            <img class="home-pin pin" src="pictures/breadcrumbs.png" width="8" height="20" alt="стрелка">
-                            <h3 class="home-pin-text">Гостиницы</h3>
+                    <a class="home-pin" href="#"><img class="home-pin pin" src="pictures/breadcrumbs.svg" width="8" height="20" alt="стрелка."></a> 
+                    <a class="home-pin" href="catalog.html"> <h3 class="home-pin-text">Гостиницы</h3></a> 
                         </div>
                     </section>
                     <section class="container-product-block">
@@ -97,20 +98,20 @@
                                 <div class="range">
                                     <div class="range-wrapper-inputs">
                                         <label class="catalog-filter-label">
-                                            <input class="range-input range-input-left" type="number" value="0"
+                                            <input class="range-input range-input-left" type="text" value="0"
                                                 name="min-price"><span class="input-text">oт</span>
                                         </label>
                                         <label class="catalog-filter-label">
-                                            <input class="range-input range-input-rignt" type="number" value="9000"
+                                            <input class="range-input range-input-rignt" type="text" value="9000"
                                                 name="max-price"><span class="input-text">до</span>
                                         </label>
                                     </div>
                                     <div class="range-scale">
-                                        <div class="range-bar" style="left: 42px; width: 206px">
-                                            <button class="range-toggle toggle-min">
+                                        <div class="range-bar" >
+                                            <button class="range-toggle toggle-min" type="submit">
                                                 <span class="visually-hidden">Изменить минимальную цену</span>
                                             </button>
-                                            <button class="range-toggle toggle-max">
+                                            <button class="range-toggle toggle-max" type="submit">
                                                 <span class="visually-hidden">Изменить максимальную цену</span>
                                             </button>
                                         </div>
@@ -119,8 +120,8 @@
 
                             </div>
                             <div class="button-settings">
-                                <button class="settings">Применить</button>
-                                <button class="settings settings-two">Сбросить</button>
+                                <button class="settings" type="submit">Применить</button>
+                                <button class="settings settings-two" type="submit">Сбросить</button>
                             </div>
                         </div>
                     </div>
@@ -136,15 +137,15 @@
                     <div class="select-button">
                         <a class="button-light" href="#">
                             <span class="visually-hidden">Показать список с карточками</span>
-                            <img class="picture" src="pictures/view-list-card.svg" width="48" height="48" alt="Вид списка">
+                            <img class="picture" src="pictures/view-list-card.svg" width="48" height="48" alt="Вид списка.">
                         </a>
                         <a class="button-light" href="#">
                             <span class="visually-hidden">Показать карточки</span>
-                            <img class="picture" src="pictures/view-list-one.svg" width="48" height="48" alt="Вид списка">
+                            <img class="picture" src="pictures/view-list-one.svg" width="48" height="48" alt="Вид списка.">
                         </a>
                         <a class="button-light light" href="#">
                             <span class="visually-hidden">Показать список</span>
-                            <img class="picture" src="pictures/view-list.svg" width="48" height="48" alt="Вид списка">
+                            <img class="picture" src="pictures/view-list.svg" width="48" height="48" alt="Вид списка.">
                         </a>
                     </div>
                 </section>
@@ -152,7 +153,7 @@
                     <section class="product">
                         <div class="product-card">
                             <a class="product-card-link" href="#"> <img class="product-card-image"
-                                    src="pictures/amara-resort-spa.jpg" width="300" height="212" alt="фото товара">
+                                    src="pictures/amara-resort-spa.jpg" width="300" height="212" alt="фото товара.">
                                 <h3 class="product-card-title">Amara Resort & Spa</h3>
                             </a>
                             <div class="product-card-offer">
@@ -164,14 +165,14 @@
                                 <a class="product-card-button" href="#">В ИЗБРАННОM</a>
                             </div>
                             <div class="product-card-offer">
-                                <img class="product-card-rating-img" src="pictures/rating.svg" width="140" height="37" alt="рейтинг товара">
+                                <img class="product-card-rating-img" src="pictures/rating.svg" width="140" height="37" alt="рейтинг товара.">
                                 <p class="product-card-rating">РЕЙТИНГ: 8,5</p>
                             </div>
                         </div>
                         <div class="product-card">
                             <a class="product-card-link" href="#">
                                 <img class="product-card-image" src="pictures/villas-at-poco-diablo.jpg" width="300" height="212"
-                                    alt="фото товара">
+                                    alt="фото товара.">
                                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
                             </a>
                             <div class="product-card-offer">
@@ -183,14 +184,14 @@
                                 <a class="product-card-button button-modifier" href="#">В ИЗБРАННОM</a>
                             </div>
                             <div class="product-card-offer">
-                                <img class="product-card-rating-img" src="pictures/rating.svg" width="140" height="37" alt="рейтинг товара">
+                                <img class="product-card-rating-img" src="pictures/rating.svg" width="140" height="37" alt="рейтинг товара.">
                                 <p class="product-card-rating">РЕЙТИНГ: 9,2</p>
                             </div>
                         </div>
 
                         <div class="product-card ">
                             <a class="product-card-link" href="#">
-                                <img class="product-card-image" src="pictures/desert-gqail-lnn.jpg" width="300" height="212" alt="фото товара">
+                                <img class="product-card-image" src="pictures/desert-gqail-lnn.jpg" width="300" height="212" alt="фото товара.">
                                 <h3 class="product-card-title">Desert Quail Inn</h3>
                             </a>
                             <div class="product-card-offer">
@@ -202,13 +203,13 @@
                                 <a class="product-card-button" href="#">В ИЗБРАННОM</a>
                             </div>
                             <div class="product-card-offer">
-                                <img class="product-card-rating-img" src="pictures/rating.svg" width="140" height="37" alt="рейтинг товара">
+                                <img class="product-card-rating-img" src="pictures/rating-three.svg" width="140" height="37" alt="рейтинг товара.">
                                 <p class="product-card-rating">РЕЙТИНГ: 6,9</p>
                             </div>
                         </div>
                         <div class="product-card">
                             <a class="product-card-link" href="#">
-                                <img class="product-card-image" src="pictures/green-tree-inn.jpg" width="300" height="212" alt="фото товара">
+                                <img class="product-card-image" src="pictures/green-tree-inn.jpg" width="300" height="212" alt="фото товара.">
                                 <h3 class="product-card-title">GreenTree Inn</h3>
                             </a>
                             <div class="product-card-offer">
@@ -220,7 +221,7 @@
                                 <a class="product-card-button " href="#">В ИЗБРАННОM</a>
                             </div>
                             <div class="product-card-offer">
-                                <img class="product-card-rating-img" src="pictures/rating.svg" width="140" height="37"  alt="рейтинг товара">
+                                <img class="product-card-rating-img" src="pictures/rating-two.svg" width="140" height="37"  alt="рейтинг товара.">
                                 <p class="product-card-rating">РЕЙТИНГ: 5,0</p>
                             </div>
                         </div>
@@ -259,7 +260,7 @@
                         <label for="email">
                             <input class="email" placeholder="Ваш e-mail" type="email" name="email" id="email" required>
                         </label>
-                        <button class="button">ПОДПИСАТЬСЯ</button>
+                        <button class="button" type="button">ПОДПИСАТЬСЯ</button>
                     </form>
                 </section>
 
@@ -271,17 +272,17 @@
                         <li class="footer-item">
                             <a class="footer-link" href="https://vk.com/htmlacademy"><span
                                     class="visually-hidden">ВК</span>
-                                <img class="logo-footer" src="pictures/social-vk.svg" width="47" height="40" alt="ВК"></a>
+                                <img class="logo-footer" src="pictures/social-vk.svg" width="47" height="40" alt="ВК."></a>
                         </li>
                         <li class="footer-item">
                             <a class="footer-link" href="https://t.me/htmlacademy"><span
                                     class="visually-hidden">Телеграм</span>
-                                <img class="logo-footer" src="pictures/social-telegram.svg" width="47" height="40" alt="телеграм"></a>
+                                <img class="logo-footer" src="pictures/social-telegram.svg" width="47" height="40" alt="телеграм."></a>
                         </li>
                         <li class="footer-item">
                             <a class="footer-link" href="https://www.youtube.com/user/htmlacademyru"><span
                                     class="visually-hidden">Ютуб</span>
-                                <img class="logo-footer" src="pictures/social-youtube.svg" width="47" height="40" alt="ютуб"></a>
+                                <img class="logo-footer" src="pictures/social-youtube.svg" width="47" height="40" alt="ютуб."></a>
                         </li>
                     </ul>
                 </section>
@@ -292,7 +293,7 @@
                 <section class="footer-logo">
                     <h2 class="visually-hidden">Логотип HTML Academy</h2>
                     <a href="https://htmlacademy.ru/">
-                        <img class="logo" src="pictures/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
+                        <img class="logo" src="pictures/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML Academy.">
                     </a>
                 </section>
             </footer>
